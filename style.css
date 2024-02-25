@@ -1,0 +1,46 @@
+body {
+    background: black;
+    user-select: none;
+    -moz-user-select: none;
+}
+
+#scroll-container {
+    width: 1600px;
+    height: 100px;
+    overflow: hidden;
+    z-index: 100;
+    position: absolute;
+    top: 800px;
+    left: 50px;
+}
+
+#scroll-bar {
+    width: 120px;
+    height: 1590px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transform: rotate(-90deg) translateY(-120px) translateX(20px);
+    transform-origin: right top;
+}
+
+.object-select {
+    width: 64px;
+    height: 64px;
+    margin: 4px;
+    background: white;
+    border-radius: 50%;
+    transform: rotate(90deg) translateX(90px);
+    transform-origin: right top;
+    text-indent: -10000px;
+}
+
+.object-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.selected {
+    background: yellow;
+}
